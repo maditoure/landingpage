@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B2B Lead Management AI — Qualification & Automatisations</title>
+  <meta name="description" content="Centralisez et qualifiez vos prospects B2B grâce à l'IA et Make.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">LeadAI<span>.b2b</span></div>
+      <a href="#formulaire" class="btn-secondary">Contact</a>
+    </div>
+  </header>
+
+  <!-- Section Hero -->
+  <section class="hero-section">
+    <div class="container hero-wrapper">
+      <div class="hero-image">
+        <img src="https://cdn.prod.website-files.com/6ac8b48eaced107aa7def5b2/6ac8b91e7bb099a23f76dcb2_LEADIMAGE.png" alt="Analyse des prospects par IA">
+      </div>
+      <div class="hero-content">
+        <h1>Transformez vos demandes commerciales en opportunités qualifiées</h1>
+        <p>Centralisez vos prospects, automatisez l’extraction et l’analyse des informations grâce à l’intelligence artificielle, et qualifiez vos demandes commerciales avec Make et Airtable.</p>
+        <a href="#formulaire" class="btn-primary">Découvrir la solution</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Features (3 Colonnes) -->
+  <section class="features-section">
+    <div class="container">
+      <h2>Une gestion des prospects plus intelligente</h2>
+      
+      <div class="features-grid">
+        <!-- Carte 1 -->
+        <div class="feature-card">
+          <div class="card-icon">⚡</div>
+          <h3>Centralisation & Traçabilité</h3>
+          <p>Centralisez automatiquement vos prospects entrants depuis la landing page directement dans Airtable sans aucune saisie manuelle.</p>
+        </div>
+
+        <!-- Carte 2 -->
+        <div class="feature-card">
+          <div class="card-icon">🤖</div>
+          <h3>Qualification par IA</h3>
+          <p>Analysez l'intention du prospect et attribuez un score de qualification automatique grâce aux AI Tools de Make.</p>
+        </div>
+
+        <!-- Carte 3 -->
+        <div class="feature-card">
+          <div class="card-icon">🚀</div>
+          <h3>Routage & Automatisations</h3>
+          <p>Déclenchez automatiquement des alertes Slack/E-mail et alimentez l'Agent IA pour répondre en temps réel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Formulaire -->
+  <section id="formulaire" class="form-section">
+    <div class="container form-container">
+      <h2>Demander une démonstration</h2>
+      <p class="form-subtitle">Remplissez le formulaire ci-dessous pour tester le scénario de qualification automatique.</p>
+
+      <form id="leadForm" class="lead-form">
+        <div class="form-group">
+          <label for="fullName">Nom complet *</label>
+          <input type="text" id="fullName" name="fullName" placeholder="Ex: Jean Dupont" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail professionnel *</label>
+          <input type="email" id="email" name="email" placeholder="jean@entreprise.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="company">Nom de l'entreprise *</label>
+          <input type="text" id="company" name="company" placeholder="Ex: TechCorp" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Votre besoin / projet *</label>
+          <textarea id="message" name="message" rows="4" placeholder="Décrivez brièvement vos attentes..." required></textarea>
+        </div>
+
+        <button type="submit" id="submitBtn" class="btn-primary btn-full">Envoyer la demande</button>
+        <div id="formResponse" class="form-response"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 LeadAI B2B. Projet d'automatisation & Landing Page.</p>
+    </div>
+  </footer>
+
+
+  
+  <script src="scripts.js" defer></script>
+</body>
+</html>

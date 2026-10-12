@@ -1,0 +1,357 @@
+/* Reset & Style Global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #111827;
+  background-color: #f9fafb;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header & Navigation */
+.navbar {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #111827;
+}
+
+.logo span {
+  color: #2563eb;
+}
+
+/* Boutons */
+.btn-primary {
+  display: inline-block;
+  background-color: #111827;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #1f2937;
+}
+
+.btn-secondary {
+  color: #374151;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  color: #111827;
+}
+
+.hero-content p {
+  font-size: 1.125rem;
+  color: #4b5563;
+  margin-bottom: 24px;
+}
+
+/* Section Features */
+.features-section {
+  padding: 80px 0;
+}
+
+.features-section h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.feature-card {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+.feature-card p {
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+/* Section Formulaire */
+.form-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+  border-top: 1px solid #e5e7eb;
+}
+
+.form-container {
+  max-width: 600px;
+}
+
+.form-section h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.form-subtitle {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 32px;
+}
+
+.lead-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-response {
+  margin-top: 12px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.form-response.success {
+  color: #16a34a;
+}
+
+.form-response.error {
+  color: #dc2626;
+}
+
+/* Footer */
+.footer {
+  padding: 32px 0;
+  text-align: center;
+  color: #9ca3af;
+  font-size: 0.875rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+
+/* Améliorations responsive */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+.hero-image {
+  flex: 1 1 50%;
+  min-width: 0;
+}
+
+.hero-image img {
+  display: block;
+  object-fit: cover;
+}
+
+.hero-content {
+  flex: 1 1 50%;
+  min-width: 0;
+}
+
+button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.btn-primary:focus-visible,
+.btn-secondary:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 3px;
+}
+
+.form-group input,
+.form-group textarea {
+  font: inherit;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .hero-section,
+  .features-section,
+  .form-section {
+    padding: 48px 0;
+  }
+
+  .hero-wrapper {
+    flex-direction: column;
+    gap: 32px;
+    align-items: stretch;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .features-section h2,
+  .form-section h2 {
+    font-size: 1.65rem;
+  }
+
+  .features-section h2 {
+    margin-bottom: 28px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .feature-card {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .navbar {
+    padding: 12px 0;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.75rem;
+  }
+
+  .btn-primary {
+    padding: 12px 18px;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+}
